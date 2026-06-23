@@ -1,0 +1,19 @@
+name: warehouse_drone
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy
+  - opencv
+  - pandas
+  - pytorch
+  - torchvision
+  - pillow
+  - pyyaml
+  - scikit-learn
+  - matplotlib
+  - joblib
+  - pygame
+  - pyopengl

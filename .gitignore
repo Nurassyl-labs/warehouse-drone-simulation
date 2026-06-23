@@ -1,0 +1,57 @@
+# ───── Python ─────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ───── Node ─────
+node_modules/
+npm-debug.log*
+.next/
+dist/
+build/
+
+# ───── Secrets / env ─────
+.env
+*.local
+
+# ───── Datasets & large artifacts (regenerate via project scripts) ─────
+data/
+dataset/
+datasets/
+processed_dataset*/
+checkpoints/
+*.pkl
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.onnx
+*.npy
+*.npz
+*.parquet
+*.sqlite
+*.db
+*.zip
+*.tar
+*.tar.gz
+
+# Keep small joblib model artifacts that projects ship intentionally
+!**/models/*.joblib
+
+# ───── Media (heavy) ─────
+*.mp4
+*.mov
+*.avi
+
+# ───── OS / editor ─────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

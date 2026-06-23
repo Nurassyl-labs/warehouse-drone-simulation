@@ -1,0 +1,31 @@
+# Project Configuration YAML File
+
+dataset:
+  num_samples: 5000
+  quick_samples: 500
+  split_train: 0.70
+  split_val: 0.15
+  split_test: 0.15
+  seed: 42
+  image_size: [640, 480]
+
+camera:
+  focal_length: 500.0
+
+shelf:
+  z: 3.0
+  levels: [-0.8, 0.0, 0.8]
+  columns: [-0.9, 0.0, 0.9]
+  markers:
+    - id: 10
+      x: -1.4
+      y: -0.9
+    - id: 11
+      x: 1.4
+      y: -0.9
+    - id: 12
+      x: -1.4
+      y: 0.9
+    - id: 13
+      x: 1.4
+      y: 0.9

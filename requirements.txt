@@ -1,0 +1,12 @@
+numpy
+opencv-contrib-python
+pandas
+torch
+torchvision
+Pillow
+PyYAML
+scikit-learn
+matplotlib
+joblib
+pygame
+PyOpenGL
