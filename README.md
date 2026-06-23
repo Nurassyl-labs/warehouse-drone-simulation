@@ -13,10 +13,10 @@
 </p>
 
 <p align="center">
-  <img src="docs/flythrough.gif" width="70%" alt="Drone fly-through of the 3D warehouse">
+  <img src="docs/demo.gif" width="90%" alt="Live autonomous warehouse scanning dashboard">
 </p>
 
-> The animation above is **rendered by this repository's own engine** — every frame is the synthetic view the drone's camera produces, the same images the AI is trained on.
+> 🟢 **Live run** of the *Intelligent Warehouse Autonomous 3D Inventory Dashboard*: the drone autonomously sweeps the aisles (left), its **real-time camera feed** is on the right, and live telemetry — battery, scan progress, ArUco markers, boxes counted — updates as it flies. Each shelf turns green once it has been scanned.
 
 ---
 
@@ -32,7 +32,13 @@ Most "drone + CV" projects need a heavy game engine, a GPU and a display. This o
 | 🧪 **Honest baselines** | Classical ML baselines (scikit-learn) vs. the CNN, with a shared evaluation harness. |
 | 🔌 **Optional Unity bridge** | A FastAPI inference server can stream predictions to a photoreal Unity warehouse (the heavy Unity assets are *not* bundled — see notes). |
 
-## 🖼️ The world the drone sees
+## 🖼️ The synthetic world (training data)
+
+The camera feed in the demo above is produced by a **headless OpenCV renderer** (`perspective_renderer.py`) — the very same engine that generates the model's labelled training data, with no display or GPU required:
+
+<p align="center">
+  <img src="docs/flythrough.gif" width="60%" alt="Headless synthetic fly-through rendered by perspective_renderer.py">
+</p>
 
 **Same shelf, different drone viewpoints** (real perspective parallax):
 
